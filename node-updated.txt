@@ -1,0 +1,36 @@
+
+                    Server with node and express (deployable server)
+
+            1. create a server folder
+            2. inside server folder generate pakage.json file: npm init -y  (server command prompt)
+            3. install following pakages : express , dotenv , cors , mongoose  
+                npm i express dotenv cors mongoose   (server command prompt)
+            4. create index.js (entry file) file in the server folder
+            5. create .env file to storre all the environmental variable in the server folder
+            6. create .gitignore file in the server folder
+            7. import dotenv , express, cors in index.js
+            8. create server app using express
+            9. use cors and express.json() to uur server app
+            10. create port to  listen your server app
+            11. Run/listen server app in the specified port
+            12. create routs folder to hold all api requests in server folder,create router.js file
+                    to resolve api request from client
+                - using express.router object , we define routes for all api
+                - inside each routes we have give logic to resolve api
+            13. to define logic to resolving api, create controller folder,  inside create 
+                    productController.js file
+
+ 
+
+                        database setup - MongoDB Atlas
+                      ----------------------------------
+
+            1. To get connection string:  open atlas, go to db click connect button , then choose connect with application, copy connection string  
+                mongodb+srv://amaljoy34667:<amal>@cluster0.dhtsk1h.mongodb.net/cart?retryWrites=true&w=majority
+            2. create db folder in server, where we use mongoose to connect mongodb with node app
+            3. import connection file into index.js
+            4. to define schema for data stored in db, create a model folder in server app,inside create productschema file
+                - import mongoose
+                - using mongoose define schema
+                - create mode/collection using the schema
+                - export model
